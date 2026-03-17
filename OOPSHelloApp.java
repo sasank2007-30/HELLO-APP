@@ -1,6 +1,12 @@
 public class OOPSHelloApp {
     public static void main(String[] args) {
-        System.out.println("Hello World"); 
-        String name = "sasank"; 
-        System.out.println("Hello, " + name + "!");
-    }}
+        
+        if (args.length > 0) {
+            // If argument is provided
+            System.out.println("Hello " + args[0]);
+        } else {
+            // Default message
+            System.out.println("Hello");
+        }
+    }
+}
